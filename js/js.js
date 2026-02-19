@@ -6,7 +6,7 @@ hum.addEventListener("click", () => {
   nav.classList.toggle("active");
 
   icon.classList.toggle("fa-bars");
-  icon.classList.toggle("fa-times"); // for older Font Awesome
+  icon.classList.toggle("fa-xmark"); // for older Font Awesome
 });
 
 const modal = document.getElementById("destinationModal");
