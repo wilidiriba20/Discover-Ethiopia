@@ -47,9 +47,6 @@
             <li><a href="#tours">Tours</a></li>
             <li><a href="#pricing">pricing</a></li>
           </ul>
-          <li>
-            <button class="btn"><a href="#book">Book Now</a></button>
-          </li>
         </div>
       </div>
     </nav>
@@ -328,16 +325,30 @@
           method="POST"
         >
           <p>Name</p>
-          <input type="text" placeholder="Enter your name" name="name" />
+          <input
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+            required
+          />
 
           <p>Email</p>
-          <input type="email" placeholder="Enter your email" name="email" />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            required
+          />
 
           <p>Date</p>
-          <input type="date" name="date" />
+          <input type="date" name="date" required />
 
           <p>Message</p>
-          <textarea placeholder="Write your message" name="message"></textarea>
+          <textarea
+            placeholder="Write your message"
+            name="message"
+            required
+          ></textarea>
 
           <button type="submit" class="btn">Book Now</button>
         </form>
