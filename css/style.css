@@ -79,6 +79,17 @@ img {
   color: var(--color-dark);
   font-weight: 500;
 }
+.nav .btn a,
+.hero a,
+.tour a {
+  text-decoration: none;
+  color: var(--color-green);
+}
+.price a {
+  text-decoration: none;
+  color: var(--color-green);
+}
+
 .nav a:hover {
   color: var(--color-green);
 }
@@ -312,6 +323,9 @@ img {
   margin: 1rem;
 }
 .price .btn1:hover {
+  background-color: var(--color-green);
+}
+.price .btn1:hover a {
   background-color: var(--color-green);
   color: var(--color-white);
 }
