@@ -3,6 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -320,7 +328,7 @@ img {
   max-width: 600px;
   margin: 2rem auto;
   padding: 3rem;
-  background: #ffffff;
+  background: var(--color-cream);
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
@@ -361,6 +369,57 @@ img {
 .form textarea:focus {
   outline: none;
   background-color: #ffffff;
+}
+.footer {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+.footer h3 {
+  margin: 1rem 1.2rem;
+}
+.footer h4 {
+  font-size: 0.9rem;
+  margin: 0.6rem;
+}
+.footer h4 a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+.footer .g-4 h4 {
+  margin: 1rem;
+}
+.footer p {
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+.footer .last {
+  margin: 0 1rem;
+  line-height: 1.4;
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+.footer .dis {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.footer .g {
+  display: grid;
+  margin: 1.5rem;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1.3fr 1fr;
+}
+.footer hr {
+  margin: 0 2rem;
+}
+.footer i {
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0.2rem;
+}
+.footer i:hover {
+  color: var(--color-yellow);
 }
 
 @media (max-width: 1200px) {
@@ -437,6 +496,9 @@ img {
     grid-template-columns: 1fr;
   }
   .price .grid {
+    grid-template-columns: 1fr;
+  }
+  .footer .g {
     grid-template-columns: 1fr;
   }
 }

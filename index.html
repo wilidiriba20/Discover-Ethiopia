@@ -27,11 +27,13 @@
         </div>
         <div class="links">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Destination</a></li>
-            <li><a href="">Tours</a></li>
-            <li><a href="">pricing</a></li>
-            <li><button class="btn">Book Now</button></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destination">Destination</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#pricing">pricing</a></li>
+            <li>
+              <button class="btn"><a href="#book">Book Now</a></button>
+            </li>
           </ul>
         </div>
         <!--mobile nav-->
@@ -40,22 +42,24 @@
         </div>
         <div class="links-sm">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Destination</a></li>
-            <li><a href="">Tours</a></li>
-            <li><a href="">pricing</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destination">Destination</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#pricing">pricing</a></li>
           </ul>
-          <button class="btn">Book Now</button>
+          <li>
+            <button class="btn"><a href="#book">Book Now</a></button>
+          </li>
         </div>
       </div>
     </nav>
-    <section class="hero">
+    <section class="hero" id="home">
       <h1>Discover the Beauty of Ethiopia</h1>
       <p>Land of Origins, Culture, and Adventure</p>
-      <button class="btn">Explore Tours</button>
+      <button class="btn"><a href="#tours">Explore Tours</a></button>
       <i class="fa-solid fa-chevron-down arrow"></i>
     </section>
-    <section class="destination">
+    <section class="destination" id="destination">
       <h1>Amazing Destinations</h1>
       <p class="first">
         Explore the wonders of Ethiopia's most breathtaking locations
@@ -127,7 +131,7 @@
         <p id="modalText"></p>
       </div>
     </section>
-    <section class="tour">
+    <section class="tour" id="tours">
       <h1>Tour Packages</h1>
       <p class="first">Choose your perfect Ethiopian adventure</p>
       <div class="grid">
@@ -156,7 +160,7 @@
             </ul>
           </div>
 
-          <button class="btn">Book Now</button>
+          <button class="btn"><a href="#book">Book Now</a></button>
         </div>
         <div class="card">
           <h1>🏔️</h1>
@@ -183,7 +187,7 @@
             </ul>
           </div>
 
-          <button class="btn">Book Now</button>
+          <button class="btn"><a href="#book">Book Now</a></button>
         </div>
         <div class="card">
           <h1>🎭</h1>
@@ -210,7 +214,7 @@
             </ul>
           </div>
 
-          <button class="btn">Book Now</button>
+          <button class="btn"><a href="#book">Book Now</a></button>
         </div>
         <div class="card">
           <h1>🦒</h1>
@@ -237,11 +241,11 @@
             </ul>
           </div>
 
-          <button class="btn">Book Now</button>
+          <button class="btn"><a href="#book">Book Now</a></button>
         </div>
       </div>
     </section>
-    <section class="price">
+    <section class="price" id="pricing">
       <h1>Pricing Plans</h1>
       <p class="first">Compare our tour packages and choose the best for you</p>
       <div class="grid">
@@ -312,28 +316,69 @@
         </div>
       </div>
     </section>
-    <section class="book">
+    <section class="book" id="book">
       <h1>Book Your Adventure</h1>
       <p class="first">
         Fill out the form below and we'll get back to you within 24 hours
       </p>
       <div class="book">
-        <form class="form">
+        <form
+          class="form"
+          action="https://formspree.io/f/meellrrj"
+          method="POST"
+        >
           <p>Name</p>
-          <input type="text" placeholder="Enter your name" />
+          <input type="text" placeholder="Enter your name" name="name" />
 
           <p>Email</p>
-          <input type="email" placeholder="Enter your email" />
+          <input type="email" placeholder="Enter your email" name="email" />
 
           <p>Date</p>
-          <input type="date" />
+          <input type="date" name="date" />
 
           <p>Message</p>
-          <textarea placeholder="Write your message"></textarea>
+          <textarea placeholder="Write your message" name="message"></textarea>
 
           <button type="submit" class="btn">Book Now</button>
         </form>
       </div>
+    </section>
+    <section class="footer">
+      <div class="g">
+        <div class="g-1">
+          <h3 class="dis"><span>🇪🇹</span> <span>Discover Ethiopia</span></h3>
+          <p>
+            Your gateway to exploring the land of origins, rich culture, and
+            breathtaking adventures.
+          </p>
+        </div>
+        <div class="g-2">
+          <h3>Quikck Links</h3>
+          <h4><a href="#destination">Destinations</a></h4>
+          <h4><a href="#tours">Tour Packages</a></h4>
+          <h4><a href="#pricing">Pricing</a></h4>
+          <h4><a href="#book">Book Now</a></h4>
+        </div>
+        <div class="g-3">
+          <h3>Contact Us</h3>
+          <p>📧 info@discoveret.com</p>
+          <p>📱 +251 11 123 4567</p>
+          <p>📍 Addis Ababa, Ethiopia</p>
+        </div>
+        <div class="g-4">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="last">
+        © 2026 Discover Ethiopia. All rights reserved. | Land of Origins,
+        Culture, and Adventure
+      </p>
     </section>
 
     <script src="js/js.js"></script>
